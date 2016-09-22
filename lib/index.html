@@ -6,6 +6,7 @@
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
         <title>{%= o.htmlWebpackPlugin.options.pkg.title %}</title>
         <link href="styles.css" charset="utf-8">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     </head>
 
     <body ng-strict-di ng-app="demo" ng-controller="MainController as main">
@@ -19,7 +20,7 @@
                         <i class="fa fa-bars"></i>
                     </md-button>
                     <h2 flex>
-                        <span>Toolbar</span>
+                        <span>NFL Scores &middot; Week {{scores.ss.gms._w}}</span>
                     </h2>
                 </div>
             </md-toolbar>
@@ -30,5 +31,6 @@
         {% } %}
     </body>
     <!-- {%= o.htmlWebpackPlugin.options.pkg.name + ' v' + o.htmlWebpackPlugin.options.pkg.version + ' built on ' + new Date() %} -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/x2js/1.2.0/xml2json.min.js" integrity="sha256-RbFvov4fXA9DW/RzOAcIC0ZHIDmghGdsoug5slJHMMI=" crossorigin="anonymous"></script>
 
 </html>
