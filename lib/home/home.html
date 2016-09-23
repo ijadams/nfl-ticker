@@ -1,4 +1,4 @@
-<div layout="column" class="gridListdemoDynamicTiles">
+<div layout="column" class="gridListdemoDynamicTiles" ng-cloak>
     <md-grid-list md-cols-sm="1" md-cols-md="2" md-cols-gt-md="6" md-row-height-gt-md="1:1" md-row-height="4:3" md-gutter="8px" md-gutter-gt-sm="4px">
         <md-grid-tile ng-repeat="tile in home.tiles" md-rowspan="{{tile.span.row}}" md-colspan="{{tile.span.col}}" md-colspan-sm="1" ng-class="tile.background">
             <md-grid-tile-score><h2>{{tile.away}}: {{tile.awayScore}} <br> {{tile.home}}: {{tile.homeScore}}</h2></md-grid-tile-score>
