@@ -1,7 +1,7 @@
 {
   "name": "nfl-ticker",
   "version": "1.0.0",
-  "description": "A pretty nfl ticker using angular, material design, and webpack.",
+  "description": "A retro nfl ticker using Angular, Material Design, ES6, and Webpack.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
