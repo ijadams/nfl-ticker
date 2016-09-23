@@ -1,10 +1,10 @@
 @import '../../node_modules/material-colors/dist/colors.scss';
 
 @mixin special-gradient() {
-      background-size: 1000% 1000%;
-      -webkit-animation: AnimationName 150s ease-in-out infinite;
-      -moz-animation: AnimationName 150s ease-in-out infinite;
-      animation: AnimationName 150s ease-in-out infinite;
+      background-size: 200% ;
+      -webkit-animation: AnimationName 50s infinite;
+      -moz-animation: AnimationName 50s infinite;
+      animation: AnimationName 50s infinite;
 
        @-webkit-keyframes AnimationName {
            0%{background-position:0% 50%}
@@ -22,24 +22,6 @@
            100%{background-position:0% 50%}
        }
 }
-
-
-@mixin gradient-animate($direction, $duration, $colors){
-$size: length($colors) * 200%;
-background: linear-gradient($direction, $colors);
-background-size: $size $size;
-border-color: rgba(0,39,69,0.11);
-box-shadow: 0 4px 7px rgba(0,33,60,0.04);
-
-  @include keyframes(gradient-animate){
-    0%{background-position: 0% 0%}
-    50%{background-position: 100% 100%}
-    100%{background-position:0% 0%}
-  };
-
-  @include animation(gradient-animate $duration linear infinite);
-}
-
 
 .gridListdemoDynamicTiles md-icon {
     width: 50%;
@@ -82,134 +64,134 @@ box-shadow: 0 4px 7px rgba(0,33,60,0.04);
 }
 
 .gridListdemoDynamicTiles md-grid-tile.NE {
-  background: linear-gradient(270deg, #c80815, #003366);
+  background: url(../images/ne.jpg) no-repeat;
   @include special-gradient();
 }
 .gridListdemoDynamicTiles .HOU {
-  background: linear-gradient(270deg,  #02253A, #B31B34);
+  background: url(../images/hou.jpg) no-repeat;
   @include special-gradient();
 }
 .gridListdemoDynamicTiles .BUF {
-  background: linear-gradient(270deg, #00338D, #C60C30);
+  background: url(../images/buf.jpg) no-repeat;
   @include special-gradient();
 }
 .gridListdemoDynamicTiles .ARI {
-  background: linear-gradient(270deg, #9B2743, black);
+  background: url(../images/ari.jpg) no-repeat;
   @include special-gradient();
 }
 .gridListdemoDynamicTiles .CAR {
-  background: linear-gradient(270deg, #0088CE, #A5ACAF, black);
+  background: url(../images/car.jpg) no-repeat;
   @include special-gradient();
 }
 
 .gridListdemoDynamicTiles .MIN {
-  background: linear-gradient(270deg, #3B0160,  #F0BF00);
+  background: url(../images/min.jpg) no-repeat;
   @include special-gradient();
 }
 .gridListdemoDynamicTiles .CIN {
-  background: linear-gradient(270deg, #FB4F14, black);
+  background: url(../images/cin.jpg) no-repeat;
   @include special-gradient();
 }
 .gridListdemoDynamicTiles .DEN {
-  background: linear-gradient(270deg, #FB4F14, #002244);
+  background: url(../images/den.jpg) no-repeat;
   @include special-gradient();
 }
 .gridListdemoDynamicTiles .GB {
-  background: linear-gradient(270deg, #203731, #FFB612);
+  background: url(../images/gb.jpg) no-repeat;
   @include special-gradient();
 }
 .gridListdemoDynamicTiles .DET {
-  background: linear-gradient(270deg, #006DB0, #C5C7CF, black);
+  background: url(../images/det.jpg) no-repeat;
   @include special-gradient();
 }
 .gridListdemoDynamicTiles .JAX {
-  background: linear-gradient(270deg, #006778, #D7A22A, #9F792C, black);
+  background: url(../images/jax.jpg) no-repeat;
   @include special-gradient();
 }
 .gridListdemoDynamicTiles .BAL {
-  background: linear-gradient(270deg, #280353, black, #D0B240);
+  background: url(../images/bal.jpg) no-repeat;
   @include special-gradient();
 }
 .gridListdemoDynamicTiles .MIA {
-  background: linear-gradient(270deg, #008D97, #F5811F);
+  background: url(../images/mia.jpg) no-repeat;
   @include special-gradient();
 }
 .gridListdemoDynamicTiles .CLE {
-  background: linear-gradient(270deg, #FE3C00,  #26201E);
+  background: url(../images/cle.jpg) no-repeat;
   @include special-gradient();
 }
 .gridListdemoDynamicTiles .NYG {
-  background: linear-gradient(270deg, #192F6B, #CA001A, #A2AAAD);
+  background: url(../images/nyg.jpg) no-repeat;
   @include special-gradient();
 }
 .gridListdemoDynamicTiles .WAS {
-  background: linear-gradient(270deg, #773141, #FFB612);
+  background: url(../images/was.jpg) no-repeat;
   @include special-gradient();
 }
 .gridListdemoDynamicTiles .TEN {
-  background: linear-gradient(270deg, #648FCC, #0D254C);
+  background: url(../images/ten.jpg) no-repeat;
   @include special-gradient();
 }
 .gridListdemoDynamicTiles .OAK {
-  background: linear-gradient(270deg, black, #C4C8CB);
+  background: url(../images/oak.jpg) no-repeat;
   @include special-gradient();
 
 }
 .gridListdemoDynamicTiles .SEA {
-  background: linear-gradient(270deg, #002244, #69BE28, #A5ACAF);
+  background: url(../images/sea.jpg) no-repeat;
   @include special-gradient();
 
 }
 .gridListdemoDynamicTiles .SF {
-  background: linear-gradient(270deg, #AF1E2C, #E6BE8A);
+  background: url(../images/sf.jpg) no-repeat;
   @include special-gradient();
 }
 .gridListdemoDynamicTiles .TB {
-  background: linear-gradient(270deg, #D60A0B, black, #89765F);
+  background: url(../images/tb.jpg) no-repeat;
   @include special-gradient();
 }
 .gridListdemoDynamicTiles .LA {
-  background: linear-gradient(270deg, #13264B, #C9AF74);
+  background: url(../images/la.jpg) no-repeat;
   @include special-gradient();
 }
 .gridListdemoDynamicTiles .IND {
-  background: linear-gradient(270deg, #003B7B, $md-grey-100);
+  background: url(../images/ind.jpg) no-repeat;
   @include special-gradient();
 }
 .gridListdemoDynamicTiles .SD {
-  background: linear-gradient(270deg, #0C2340, #FFB81C, #0072CE);
+  background: url(../images/sd.jpg) no-repeat;
   @include special-gradient();
 }
 .gridListdemoDynamicTiles .KC {
-  background: linear-gradient(270deg, #B20032, #F2C800);
+  background: url(../images/kc.jpg) no-repeat;
   @include special-gradient();
 }
 .gridListdemoDynamicTiles .NYJ {
-  background: linear-gradient(270deg,  #0C371D, $md-grey-100);
+  background: url(../images/nyj.jpg) no-repeat;
   @include special-gradient();
 }
 .gridListdemoDynamicTiles .PHI {
-  background: linear-gradient(270deg,#003B48, #D3A205, #708090,  #C0C0C0);
+  background: url(../images/phi.jpg) no-repeat;
   @include special-gradient();
 }
 .gridListdemoDynamicTiles .PIT {
-  background: linear-gradient(270deg, black, #FFB612, black);
+  background: url(../images/pit.jpg) no-repeat;
   @include special-gradient();
 }
 .gridListdemoDynamicTiles .DAL {
-  background: linear-gradient(270deg,  #0D254C, #C5CED6);
+  background: url(../images/dal.jpg) no-repeat;
   @include special-gradient();
 }
 .gridListdemoDynamicTiles .CHI {
-  background: linear-gradient(270deg,  #03202F,  #DD4814);
+  background: url(../images/chi.jpg) no-repeat;
   @include special-gradient();
 }
 .gridListdemoDynamicTiles .NO {
-  background: linear-gradient(270deg, black, #D2B887, #D3A205);
+  background: url(../images/no.jpg) no-repeat;
   @include special-gradient();
 }
 .gridListdemoDynamicTiles .ATL {
-  background: linear-gradient(270deg, #BD0D18, black);
+  background: url(../images/atl.jpg) no-repeat;
   @include special-gradient();
 }
 
@@ -246,7 +228,7 @@ box-shadow: 0 4px 7px rgba(0,33,60,0.04);
 }
 .gridListdemoDynamicTiles md-grid-tile {
    background: linear-gradient(270deg, $md-grey-100, $md-grey-200, $md-grey-300, $md-grey-400, $md-grey-500, $md-grey-600);
-   background-size: 1200% 1200%;
+   background-size: contain;
 
    -webkit-animation: AnimationName 50s ease infinite;
    -moz-animation: AnimationName 50s ease infinite;
