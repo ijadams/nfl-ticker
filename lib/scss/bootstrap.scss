@@ -1,5 +1,14 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab|Inconsolata);
 @import "./variables";
 @import "./icon";
 @import "./fab";
 @import "./nav";
+
+.layout-fill {
+  background: #69f0ae;
+}
+
+$layout-breakpoint-xs:     600px !default;
+$layout-breakpoint-sm:     768px !default;
+$layout-breakpoint-md:     960px !default;
+$layout-breakpoint-lg:     1920px !default;

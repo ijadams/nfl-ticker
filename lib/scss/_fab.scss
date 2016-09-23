@@ -3,7 +3,8 @@ md-fab-speed-dial {
     bottom: 20px;
     right: 20px;
     .md-button.md-warn.md-fab {
-      background: black;
+      a {text-decoration: none;}
+      background: #9c27b0;
     }
     md-fab-trigger {
         button {
@@ -15,4 +16,8 @@ md-fab-speed-dial {
             font-size: 20px !important;
         }
     }
+}
+
+.md-button.md-default-theme.md-warn.md-raised:not([disabled]):hover, .md-button.md-warn.md-raised:not([disabled]):hover, .md-button.md-default-theme.md-warn.md-fab:not([disabled]):hover, .md-button.md-warn.md-fab:not([disabled]):hover {
+  background-color: #ba68c8 !important;
 }
