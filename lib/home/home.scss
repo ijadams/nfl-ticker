@@ -1,5 +1,29 @@
 @import '../../node_modules/material-colors/dist/colors.scss';
 
+@mixin special-gradient() {
+      background-size: 1000% 1000%;
+      -webkit-animation: AnimationName 150s ease-in-out infinite;
+      -moz-animation: AnimationName 150s ease-in-out infinite;
+      animation: AnimationName 150s ease-in-out infinite;
+
+       @-webkit-keyframes AnimationName {
+           0%{background-position:0% 50%}
+           50%{background-position:100% 50%}
+           100%{background-position:0% 50%}
+       }
+       @-moz-keyframes AnimationName {
+           0%{background-position:0% 50%}
+           50%{background-position:100% 50%}
+           100%{background-position:0% 50%}
+       }
+       @keyframes AnimationName {
+           0%{background-position:0% 50%}
+           50%{background-position:100% 50%}
+           100%{background-position:0% 50%}
+       }
+}
+
+
 .gridListdemoDynamicTiles md-icon {
     width: 50%;
     height: 50%;
@@ -30,47 +54,140 @@
 
 
   h2 {
-    color: $md-red-100;
+    color: white;
     font-weight: 700;
     font-size: 2em;
   }
 
 }
 
-.gridListdemoDynamicTiles .NE {
-  background: linear-gradient(75deg, #1A237E, #3949AB);
+.gridListdemoDynamicTiles md-grid-tile.NE {
+  background: linear-gradient(270deg, $md-indigo-900, $md-indigo-700, $md-indigo-600, $md-red-500, $md-red-600);
+  @include special-gradient();
 }
-.gridListdemoDynamicTiles .HOU
-.gridListdemoDynamicTiles .BUF
-.gridListdemoDynamicTiles .ARI
-.gridListdemoDynamicTiles .CAR
-.gridListdemoDynamicTiles .MIN
-.gridListdemoDynamicTiles .CIN
-.gridListdemoDynamicTiles .DEN
-.gridListdemoDynamicTiles .GB
-.gridListdemoDynamicTiles .DET
-.gridListdemoDynamicTiles .JAX
-.gridListdemoDynamicTiles .BAL
-.gridListdemoDynamicTiles .MIA
-.gridListdemoDynamicTiles .CLE
-.gridListdemoDynamicTiles .NYG
-.gridListdemoDynamicTiles .WAS
-.gridListdemoDynamicTiles .TEN
-.gridListdemoDynamicTiles .OAK
-.gridListdemoDynamicTiles .SEA
-.gridListdemoDynamicTiles .SF
-.gridListdemoDynamicTiles .TB
-.gridListdemoDynamicTiles .LA
-.gridListdemoDynamicTiles .IND
-.gridListdemoDynamicTiles .SD
-.gridListdemoDynamicTiles .KC
-.gridListdemoDynamicTiles .NYJ
-.gridListdemoDynamicTiles .PHI
-.gridListdemoDynamicTiles .PIT
-.gridListdemoDynamicTiles .DAL
-.gridListdemoDynamicTiles .CHI
-.gridListdemoDynamicTiles .NO
-.gridListdemoDynamicTiles .ATL
+.gridListdemoDynamicTiles .HOU {
+  background: linear-gradient(270deg, $md-indigo-900, $md-indigo-700, $md-indigo-600, $md-red-800, $md-red-900);
+  @include special-gradient();
+}
+.gridListdemoDynamicTiles .BUF {
+  background: linear-gradient(270deg, $md-blue-900, $md-blue-700, $md-blue-600, $md-red-500, $md-red-500);
+  @include special-gradient();
+}
+.gridListdemoDynamicTiles .ARI {
+  background: linear-gradient(270deg, $md-red-900, $md-red-700, $md-red-600, $md-grey-800, $md-grey-900);
+  @include special-gradient();
+}
+.gridListdemoDynamicTiles .CAR {
+  background: linear-gradient(270deg, #00E5FF, #18FFFF, #03A9F4, $md-grey-900, black);
+  @include special-gradient();
+}
+
+.gridListdemoDynamicTiles .MIN {
+  background: linear-gradient(270deg, $md-purple-500, $md-purple-400, $md-purple-300, $md-yellow-500, #FFFF00);
+  @include special-gradient();
+}
+.gridListdemoDynamicTiles .CIN {
+  background: linear-gradient(270deg, $md-orange-600, $md-orange-400, $md-orange-300, $md-grey-900, black);
+  @include special-gradient();
+}
+.gridListdemoDynamicTiles .DEN {
+  background: linear-gradient(270deg, $md-indigo-900, $md-indigo-700, $md-indigo-600, $md-orange-700, $md-orange-800);
+  @include special-gradient();
+}
+.gridListdemoDynamicTiles .GB {
+  background: linear-gradient(270deg, $md-green-900, $md-green-800, $md-green-700, $md-yellow-500, $md-yellow-400);
+  @include special-gradient();
+}
+.gridListdemoDynamicTiles .DET {
+  background: linear-gradient(270deg, $md-light-blue-400, $md-light-blue-300, $md-light-blue-200, $md-grey-400, $md-grey-300);
+  @include special-gradient();
+}
+.gridListdemoDynamicTiles .JAX {
+  background: linear-gradient(270deg, $md-teal-600, $md-teal-500, $md-yellow-600, $md-yellow-700);
+  @include special-gradient();
+}
+.gridListdemoDynamicTiles .BAL {
+  background: linear-gradient(270deg, $md-purple-600, $md-purple-500, $md-grey-800, $md-grey-900);
+  @include special-gradient();
+}
+.gridListdemoDynamicTiles .MIA {
+  background: linear-gradient(270deg, $md-light-blue-400, $md-light-blue-300, $md-light-blue-200, $md-orange-400, $md-orange-500);
+  @include special-gradient();
+}
+.gridListdemoDynamicTiles .CLE {
+  background: linear-gradient(270deg, $md-orange-600, $md-orange-500, $md-orange-400, $md-grey-900, black);
+  @include special-gradient();
+}
+.gridListdemoDynamicTiles .NYG {
+  background: linear-gradient(270deg, $md-indigo-900, $md-indigo-700, $md-indigo-600, $md-red-500, $md-red-600);
+  @include special-gradient();
+}
+.gridListdemoDynamicTiles .WAS {
+  background: linear-gradient(270deg, $md-red-900, $md-red-700, $md-red-600, $md-yellow-500, $md-yellow-600);
+  @include special-gradient();
+}
+.gridListdemoDynamicTiles .TEN {
+  background: linear-gradient(270deg, $md-light-blue-400, $md-light-blue-300, $md-yellow-500, $md-yellow-600);
+  @include special-gradient();
+}
+.gridListdemoDynamicTiles .OAK {
+  background: linear-gradient(270deg, $md-grey-800, $md-grey-900, black);
+}
+.gridListdemoDynamicTiles .SEA {
+  background: linear-gradient(270deg, $md-indigo-900, $md-indigo-800, #00E676);
+}
+.gridListdemoDynamicTiles .SF {
+  background: linear-gradient(270deg, $md-red-700, $md-red-600, $md-yellow-500, $md-yellow-600);
+  @include special-gradient();
+}
+.gridListdemoDynamicTiles .TB {
+  background: linear-gradient(270deg, $md-red-700, $md-red-600, $md-orange-500, black);
+  @include special-gradient();
+}
+.gridListdemoDynamicTiles .LA {
+  background: linear-gradient(270deg, $md-blue-600, $md-blue-500, $md-yellow-500, $md-yellow-600);
+  @include special-gradient();
+}
+.gridListdemoDynamicTiles .IND {
+  background: linear-gradient(270deg, $md-blue-600, $md-blue-500, $md-grey-200, $md-grey-300);
+  @include special-gradient();
+}
+.gridListdemoDynamicTiles .SD {
+  background: linear-gradient(270deg, $md-light-blue-400, $md-light-blue-300, $md-yellow-500, $md-yellow-300);
+  @include special-gradient();
+}
+.gridListdemoDynamicTiles .KC {
+  background: linear-gradient(270deg, $md-red-400, $md-red-300, $md-grey-900, black);
+  @include special-gradient();
+}
+.gridListdemoDynamicTiles .NYJ {
+  background: linear-gradient(270deg, $md-green-900, $md-green-800, $md-green-700);
+  @include special-gradient();
+}
+.gridListdemoDynamicTiles .PHI {
+  background: linear-gradient(270deg, $md-green-800, $md-green-700, $md-green-600);
+  @include special-gradient();
+}
+.gridListdemoDynamicTiles .PIT {
+  background: linear-gradient(270deg, black, $md-grey-900, $md-yellow-500);
+  @include special-gradient();
+}
+.gridListdemoDynamicTiles .DAL {
+  background: linear-gradient(270deg, $md-light-blue-400, $md-light-blue-300, $md-light-blue-200, $md-grey-400, $md-grey-300);
+  @include special-gradient();
+}
+.gridListdemoDynamicTiles .CHI {
+  background: linear-gradient(270deg, $md-indigo-900, $md-indigo-700, $md-orange-400, $md-orange-500);
+  @include special-gradient();
+}
+.gridListdemoDynamicTiles .NO {
+  background: linear-gradient(270deg, black, $md-grey-900, $md-yellow-500);
+  @include special-gradient();
+}
+.gridListdemoDynamicTiles .ATL {
+  background: linear-gradient(270deg, $md-red-900, $md-red-700, $md-red-600, $md-grey-800, $md-grey-900);
+  @include special-gradient();
+}
 
 
 .gridListdemoDynamicTiles .gray {
@@ -104,12 +221,12 @@
     background: #ff80ab;
 }
 .gridListdemoDynamicTiles md-grid-tile {
-   background: linear-gradient(270deg, #FAFAFA, #F5F5F5, #EEEEEE, #E0E0E0, #BDBDBD, #c6ff00);
+   background: linear-gradient(270deg, $md-grey-100, $md-grey-200, $md-grey-300, $md-grey-400, $md-grey-500, $md-grey-600);
    background-size: 1200% 1200%;
 
-   -webkit-animation: AnimationName 350s ease infinite;
-   -moz-animation: AnimationName 350s ease infinite;
-   animation: AnimationName 350s ease infinite;
+   -webkit-animation: AnimationName 250s ease infinite;
+   -moz-animation: AnimationName 250s ease infinite;
+   animation: AnimationName 250s ease infinite;
 
     @-webkit-keyframes AnimationName {
         0%{background-position:0% 50%}
