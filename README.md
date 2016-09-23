@@ -5,3 +5,6 @@ A simple NFL score ticker using RESTful APIs, webpack, Material Design, Angular,
 clone repo and run `npm install`
 
 start the dev server with `npm run-script devserver`
+
+
+:football: <a href="http://ianjadams.com/nfl-ticker">demo</a> :football:
