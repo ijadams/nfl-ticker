@@ -2,6 +2,9 @@ md-fab-speed-dial {
     position: fixed;
     bottom: 20px;
     right: 20px;
+    .md-button.md-warn.md-fab {
+      background: black;
+    }
     md-fab-trigger {
         button {
             font-size: 25px !important;
