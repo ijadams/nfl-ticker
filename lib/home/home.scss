@@ -1,7 +1,7 @@
 @import '../../node_modules/material-colors/dist/colors.scss';
 
 @mixin special-gradient() {
-      background-size: 200% ;
+      background-size: 125% ;
       -webkit-animation: AnimationName 50s infinite;
       -moz-animation: AnimationName 50s infinite;
       animation: AnimationName 50s infinite;
@@ -20,6 +20,15 @@
            0%{background-position:0% 50%}
            50%{background-position:100% 50%}
            100%{background-position:0% 50%}
+       }
+
+       @media screen and (max-width: 40em) {
+         background: linear-gradient($md-purple-300, $md-purple-700) !important;
+         min-width: 90vw;
+         min-height: 300px;
+         display: inline-block;
+         position: relative;
+         margin-bottom: 1rem;
        }
 }
 
@@ -47,6 +56,10 @@
 }
 .gridListdemoDynamicTiles md-grid-list {
     margin: 8px;
+    @media screen and (max-width: 40em) {
+      margin: 0 auto;
+      text-align: center;
+    }
 }
 
 .gridListdemoDynamicTiles md-grid-tile  {

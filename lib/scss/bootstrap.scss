@@ -5,7 +5,8 @@
 @import "./nav";
 
 .layout-fill {
-  background: #69f0ae;
+  background: url(http://bgfons.com/upload/grass_texture223.jpg) repeat;
+  background-size: cover;
 }
 
 $layout-breakpoint-xs:     600px !important;
