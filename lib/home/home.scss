@@ -72,7 +72,7 @@
     color: black;
     font-weight: 700;
     font-size: 1.69em;
-    font-family: 'Roboto Slab', serif;
+    font-family: sans-serif;
     letter-spacing: 2px;
     background: white;
     padding: 1rem;
@@ -83,215 +83,146 @@
 
 }
 
-.gridListdemoDynamicTiles md-grid-tile.NE {
-  background: url(../images/ne.jpg) no-repeat;
-  @include special-gradient();
+md-half-score md-grid-tile.NE {
+  background: #c80815;
+  color: #003366;
 }
-.gridListdemoDynamicTiles .HOU {
-  background: url(../images/hou.jpg) no-repeat;
-  @include special-gradient();
-}
-.gridListdemoDynamicTiles .BUF {
-  background: url(../images/buf.jpg) no-repeat;
-  @include special-gradient();
-}
-.gridListdemoDynamicTiles .ARI {
-  background: url(../images/ari.jpg) no-repeat;
-  @include special-gradient();
-}
-.gridListdemoDynamicTiles .CAR {
-  background: url(../images/car.jpg) no-repeat;
-  @include special-gradient();
+md-half-score .HOU {
+  background:  #02253A;
+  color: #B31B34;
 }
 
-.gridListdemoDynamicTiles .MIN {
-  background: url(../images/min.jpg) no-repeat;
-  @include special-gradient();
-}
-.gridListdemoDynamicTiles .CIN {
-  background: url(../images/cin.jpg) no-repeat;
-  @include special-gradient();
-}
-.gridListdemoDynamicTiles .DEN {
-  background: url(../images/den.jpg) no-repeat;
-  @include special-gradient();
-}
-.gridListdemoDynamicTiles .GB {
-  background: url(../images/gb.jpg) no-repeat;
-  @include special-gradient();
-}
-.gridListdemoDynamicTiles .DET {
-  background: url(../images/det.jpg) no-repeat;
-  @include special-gradient();
-}
-.gridListdemoDynamicTiles .JAX {
-  background: url(../images/jax.jpg) no-repeat;
-  @include special-gradient();
-}
-.gridListdemoDynamicTiles .BAL {
-  background: url(../images/bal.jpg) no-repeat;
-  @include special-gradient();
-}
-.gridListdemoDynamicTiles .MIA {
-  background: url(../images/mia.jpg) no-repeat;
-  @include special-gradient();
-}
-.gridListdemoDynamicTiles .CLE {
-  background: url(../images/cle.jpg) no-repeat;
-  @include special-gradient();
-}
-.gridListdemoDynamicTiles .NYG {
-  background: url(../images/nyg.jpg) no-repeat;
-  @include special-gradient();
-}
-.gridListdemoDynamicTiles .WAS {
-  background: url(../images/was.jpg) no-repeat;
-  @include special-gradient();
-}
-.gridListdemoDynamicTiles .TEN {
-  background: url(../images/ten.jpg) no-repeat;
-  @include special-gradient();
-}
-.gridListdemoDynamicTiles .OAK {
-  background: url(../images/oak.jpg) no-repeat;
-  @include special-gradient();
+md-half-score .BUF {
+  background: #00338D;
+  color: #C60C30;
 
 }
-.gridListdemoDynamicTiles .SEA {
-  background: url(../images/sea.jpg) no-repeat;
-  @include special-gradient();
+md-half-score .ARI {
+  background: #9B2743;
+  color: black;
+}
+md-half-score .CAR {
+  background: #0088CE;
+  color: black;
 
 }
-.gridListdemoDynamicTiles .SF {
-  background: url(../images/sf.jpg) no-repeat;
-  @include special-gradient();
+
+md-half-score .MIN {
+  background: #3B0160;
+  color: #F0BF00;
 }
-.gridListdemoDynamicTiles .TB {
-  background: url(../images/tb.jpg) no-repeat;
-  @include special-gradient();
+md-half-score .CIN {
+  background: #FB4F14;
+  color: black;
 }
-.gridListdemoDynamicTiles .LA {
-  background: url(../images/la.jpg) no-repeat;
-  @include special-gradient();
+md-half-score .DEN {
+  background: #FB4F14;
+  color: #002244;
 }
-.gridListdemoDynamicTiles .IND {
-  background: url(../images/ind.jpg) no-repeat;
-  @include special-gradient();
+md-half-score .GB {
+  background: #203731;
+  color: #FFB612;
 }
-.gridListdemoDynamicTiles .SD {
-  background: url(../images/sd.jpg) no-repeat;
-  @include special-gradient();
+md-half-score .DET {
+  background: #006DB0;
+  color: #C5C7CF;
 }
-.gridListdemoDynamicTiles .KC {
-  background: url(../images/kc.jpg) no-repeat;
-  @include special-gradient();
+md-half-score .JAX {
+  background: #006778;
+  color: #D7A22A;
 }
-.gridListdemoDynamicTiles .NYJ {
-  background: url(../images/nyj.jpg) no-repeat;
-  @include special-gradient();
+md-half-score .BAL {
+  background: #280353;
+  color: #D0B240;
 }
-.gridListdemoDynamicTiles .PHI {
-  background: url(../images/phi.jpg) no-repeat;
-  @include special-gradient();
+md-half-score .MIA {
+  background: #008D97;
+  color: #F5811F;
 }
-.gridListdemoDynamicTiles .PIT {
-  background: url(../images/pit.jpg) no-repeat;
-  @include special-gradient();
+md-half-score .CLE {
+  background: #FE3C00;
+  color: #26201E;
 }
-.gridListdemoDynamicTiles .DAL {
-  background: url(../images/dal.jpg) no-repeat;
-  @include special-gradient();
+md-half-score .NYG {
+  background: #192F6B;
+  color: #CA001A;
 }
-.gridListdemoDynamicTiles .CHI {
-  background: url(../images/chi.jpg) no-repeat;
-  @include special-gradient();
+md-half-score .WAS {
+  background: #773141;
+  color: #FFB612;
 }
-.gridListdemoDynamicTiles .NO {
-  background: url(../images/no.jpg) no-repeat;
-  @include special-gradient();
+md-half-score .TEN {
+  background: #648FCC;
+  color: #0D254C;
 }
-.gridListdemoDynamicTiles .ATL {
-  background: url(../images/atl.jpg) no-repeat;
-  @include special-gradient();
+md-half-score .OAK {
+  background: #C4C8CB;
+  color: black;
+
+
+}
+md-half-score .SEA {
+  background: #002244;
+  color: #69BE28;
+
+}
+md-half-score .SF {
+  background: #AF1E2C;
+  color: #E6BE8A;
+}
+md-half-score .TB {
+  background: #D60A0B;
+  color: #89765F;
+
+}
+md-half-score .LA {
+  background: #13264B;
+  color: #C9AF74;
+}
+md-half-score .IND {
+  background: #003B7B;
+  color:  white;
+}
+md-half-score .SD {
+  background: #0C2340;
+  color: #0072CE;
+
+}
+md-half-score .KC {
+  background: #B20032;
+  color: #F2C800;
+}
+md-half-score .NYJ {
+  background:  #0C371D;
+  color: white;
+
+}
+md-half-score .PHI {
+  background: #003B48;
+  color: #D3A205;
+}
+md-half-score .PIT {
+  background: black;
+  color: #FFB612;
+
+}
+md-half-score .DAL {
+  background:  #0D254C;
+  color: #C5CED6;
+}
+md-half-score .CHI {
+  background:  #03202F;
+  color: #DD4814;
+}
+md-half-score .NO {
+  background: #D2B887;
+  color: black;
+
+}
+md-half-score .ATL {
+  background: #BD0D18;
+  color: black;
 }
 
 
-.gridListdemoDynamicTiles .gray {
-    background: #f5f5f5;
-}
-.gridListdemoDynamicTiles .green {
-    background: #b9f6ca;
-}
-.gridListdemoDynamicTiles .yellow {
-    background: #ffff8d;
-}
-.gridListdemoDynamicTiles .blue {
-    background: #84ffff;
-}
-.gridListdemoDynamicTiles .darkBlue {
-    background: #80d8ff;
-}
-.gridListdemoDynamicTiles .deepBlue {
-    background: #448aff;
-}
-.gridListdemoDynamicTiles .purple {
-    background: #b388ff;
-}
-.gridListdemoDynamicTiles .lightPurple {
-    background: #8c9eff;
-}
-.gridListdemoDynamicTiles .red {
-    background: #ff8a80;
-}
-.gridListdemoDynamicTiles .pink {
-    background: #ff80ab;
-}
-.gridListdemoDynamicTiles md-grid-tile {
-   background: linear-gradient(270deg, $md-grey-100, $md-grey-200, $md-grey-300, $md-grey-400, $md-grey-500, $md-grey-600);
-   background-size: contain;
-
-   -webkit-animation: AnimationName 50s ease infinite;
-   -moz-animation: AnimationName 50s ease infinite;
-   animation: AnimationName 50s ease infinite;
-
-    @-webkit-keyframes AnimationName {
-        0%{background-position:0% 50%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
-    }
-    @-moz-keyframes AnimationName {
-        0%{background-position:0% 50%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
-    }
-    @keyframes AnimationName {
-        0%{background-position:0% 50%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
-    }
-}
-
-.gridListdemoDynamicTiles md-grid-tile md-icon {
-    padding-bottom: 32px;
-}
-.gridListdemoDynamicTiles md-grid-tile md-grid-tile-footer {
-  font-family: 'Inconsolata', monospace;
-    background: rgba(0, 0, 0, 0);
-    height: 36px;
-    @media screen and (max-width: 480px) {
-      display: none;
-    }
-}
-.gridListdemoDynamicTiles md-grid-tile-footer figcaption {
-    width: 100%;
-}
-.gridListdemoDynamicTiles md-grid-tile-footer figcaption h3 {
-    margin: 0;
-    font-weight: 700;
-    width: 100%;
-    font-size: 12px;
-    text-align: center;
-}
-
-//I don't know why, but if this is not declared, you'll see little dots on top of the speed dial. The code its the same from the material.angular one, & there is no bug on their code.....strange
 .md-scale .md-fab-action-item { opacity: 0; }
