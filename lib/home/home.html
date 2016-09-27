@@ -1,13 +1,25 @@
-<div layout="column" class="gridListdemoDynamicTiles" ng-cloak>
-    <md-grid-list md-cols-sm="1" md-cols-md="2" md-cols-gt-md="6" md-row-height-gt-md="1:1" md-row-height="4:3" md-gutter="8px" md-gutter-gt-sm="4px">
-        <md-grid-tile ng-repeat="tile in home.tiles" md-rowspan="{{tile.span.row}}" md-colspan="{{tile.span.col}}" md-colspan-sm="1" ng-class="tile.background">
-            <md-grid-tile-score><h2>{{tile.away}}: {{tile.awayScore}} <br> {{tile.home}}: {{tile.homeScore}}</h2></md-grid-tile-score>
-            <md-grid-tile-footer>
-                <h3>{{tile.gameTime | date:'mediumDate' }} @ {{tile.home}}</h3>
-            </md-grid-tile-footer>
-        </md-grid-tile>
-    </md-grid-list>
+<div layout="full" class="scores-full" ng-cloak>
+  <div class="container" ng-repeat="score in home.scores">
+
+    <md-scores-half ng-class="score.home" class="home">
+      <md-scores-half-score><h2>{{score.homeScore}}</h2></md-scores-half-score>
+      <md-scores-half-name><h2>{{score.home}}</h2></md-scores-half-name>
+      <md-scores-half-home><p>HOME</p></md-scores-half-home>
+    </md-scores-half>
+
+    <md-scores-half ng-class="score.away" class="away">
+      <md-scores-half-score><h2>{{score.homeAway}}</h2></md-scores-half-score>
+      <md-scores-half-name><h2>{{score.away}}</h2></md-scores-half-name>
+      <md-scores-half-away><p>AWAY</p></md-scores-half-away>
+    </md-scores-half>
+
+    <md-scores-footer>
+        <p>{{tile.gameTime | date:'mediumDate' }}</p>
+    </md-scores-footer>
+
+  </div>
 </div>
+
 <md-fab-speed-dial md-open="demo.isOpen" md-direction="up" class="md-scale md-hover-full" ng-mouseenter="demo.isOpen=true" ng-mouseleave="demo.isOpen=false">
     <md-fab-trigger>
         <md-button aria-label="menu" class="md-fab md-warn">
