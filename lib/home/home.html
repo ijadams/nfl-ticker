@@ -2,19 +2,21 @@
 
     <md-half-score ng-class="score.home" class="home">
       <md-half-score-score><h2>{{score.homeScore}}</h2></md-half-score-score>
-      <md-half-score-name><h2>{{score.home}}</h2></md-half-score-name>
-      <md-half-score-home><p>HOME</p></md-half-score-home>
+      <md-half-score-name><h2>{{score.home}} &middot; <span class="light">HOME</span></h2></md-half-score-name>
+      <md-scores-footer-time>
+          <p>{{score.gameTime | date:'mediumDate' }}</p>
+      </md-scores-footer>
     </md-half-score>
 
     <md-half-score ng-class="score.away" class="away">
       <md-half-score-score><h2>{{score.awayScore}}</h2></md-half-score-score>
-      <md-half-score-name><h2>{{score.away}}</h2></md-half-score-name>
-      <md-half-score-away><p>AWAY</p></md-half-score-away>
+      <md-half-score-name><h2>{{score.away}} &middot; <span class="light"> AWAY</span></h2></md-half-score-name>
+      <md-scores-footer-hour>
+          <p>{{score.gameHour | date:'shortTime' }}pm</p>
+      </md-scores-footer>
     </md-half-score>
 
-    <md-scores-footer>
-        <p>{{tile.gameTime | date:'mediumDate' }}</p>
-    </md-scores-footer>
+
 
 </div>
 
