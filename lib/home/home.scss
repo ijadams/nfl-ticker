@@ -1,225 +1,186 @@
 @import '../../node_modules/material-colors/dist/colors.scss';
 
-@mixin special-gradient() {
-      background-size: 125% ;
-      -webkit-animation: AnimationName 50s infinite;
-      -moz-animation: AnimationName 50s infinite;
-      animation: AnimationName 50s infinite;
-
-       @-webkit-keyframes AnimationName {
-           0%{background-position:0% 50%}
-           50%{background-position:100% 50%}
-           100%{background-position:0% 50%}
-       }
-       @-moz-keyframes AnimationName {
-           0%{background-position:0% 50%}
-           50%{background-position:100% 50%}
-           100%{background-position:0% 50%}
-       }
-       @keyframes AnimationName {
-           0%{background-position:0% 50%}
-           50%{background-position:100% 50%}
-           100%{background-position:0% 50%}
-       }
-
-       @media screen and (max-width: 40em) {
-         background: linear-gradient($md-purple-300, $md-purple-700) !important;
-         min-width: 90vw;
-         min-height: 300px;
-         display: inline-block;
-         position: relative;
-         margin-bottom: 1rem;
-       }
-}
-
-.gridListdemoDynamicTiles md-icon {
-    width: 50%;
-    height: 50%;
-}
-.gridListdemoDynamicTiles md-icon svg {
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-}
-.gridListdemoDynamicTiles .s64 {
-    font-size: 64px;
-}
-.gridListdemoDynamicTiles .s32 {
-    font-size: 48px;
-}
-.gridListdemoDynamicTiles md-icon.fa {
-    display: block;
-    padding-left: 0;
-}
-.gridListdemoDynamicTiles md-icon.s32 span {
-    padding-left: 8px;
-}
-.gridListdemoDynamicTiles md-grid-list {
-    margin: 8px;
-    @media screen and (max-width: 40em) {
-      margin: 0 auto;
-      text-align: center;
+.scores-full {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    .container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: block;
     }
 }
 
-.gridListdemoDynamicTiles md-grid-tile  {
+h2.week.flex {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding:0.5rem 1rem;
+  color: white;
+  font-weight: 100;
+  z-index: 1;
+  letter-spacing: 2.25px;
+}
 
-  box-shadow: 0 4px 7px rgba(0,33,60,0.15);
-  border-radius: 5px;
+md-half-score {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  padding: 2rem;
 
 
-  h2 {
-    color: black;
-    font-weight: 700;
-    font-size: 1.69em;
-    font-family: sans-serif;
-    letter-spacing: 2px;
-    background: white;
-    padding: 1rem;
-    border-radius: 30px;
-    box-shadow: 0 4px 7px rgba(0,33,60,0.15);
-
+  md-half-score-score {
+    h2 {
+      margin-top: 33vh;
+      font-size: 10vw;
+    }
   }
 
+  h2 {
+    font-size: 2em;
+    font-weight: 700;
+  }
 }
 
-md-half-score md-grid-tile.NE {
-  background: #c80815;
-  color: #003366;
+md-half-score.NE {
+  background: #003366;
+  color: #c80815;
 }
-md-half-score .HOU {
+md-half-score.HOU {
   background:  #02253A;
   color: #B31B34;
 }
 
-md-half-score .BUF {
+md-half-score.BUF {
   background: #00338D;
   color: #C60C30;
 
 }
-md-half-score .ARI {
+md-half-score.ARI {
   background: #9B2743;
-  color: black;
+  color: white;
 }
-md-half-score .CAR {
+md-half-score.CAR {
   background: #0088CE;
   color: black;
 
 }
 
-md-half-score .MIN {
+md-half-score.MIN {
   background: #3B0160;
   color: #F0BF00;
 }
-md-half-score .CIN {
+md-half-score.CIN {
   background: #FB4F14;
   color: black;
 }
-md-half-score .DEN {
-  background: #FB4F14;
-  color: #002244;
+md-half-score.DEN {
+  background: #002244;
+  color: #FB4F14;
 }
-md-half-score .GB {
+md-half-score.GB {
   background: #203731;
   color: #FFB612;
 }
-md-half-score .DET {
+md-half-score.DET {
   background: #006DB0;
   color: #C5C7CF;
 }
-md-half-score .JAX {
+md-half-score.JAX {
   background: #006778;
   color: #D7A22A;
 }
-md-half-score .BAL {
+md-half-score.BAL {
   background: #280353;
   color: #D0B240;
 }
-md-half-score .MIA {
+md-half-score.MIA {
   background: #008D97;
   color: #F5811F;
 }
-md-half-score .CLE {
+md-half-score.CLE {
   background: #FE3C00;
   color: #26201E;
 }
-md-half-score .NYG {
+md-half-score.NYG {
   background: #192F6B;
   color: #CA001A;
 }
-md-half-score .WAS {
+md-half-score.WAS {
   background: #773141;
   color: #FFB612;
 }
-md-half-score .TEN {
+md-half-score.TEN {
   background: #648FCC;
   color: #0D254C;
 }
-md-half-score .OAK {
+md-half-score.OAK {
   background: #C4C8CB;
   color: black;
 
 
 }
-md-half-score .SEA {
+md-half-score.SEA {
   background: #002244;
   color: #69BE28;
 
 }
-md-half-score .SF {
+md-half-score.SF {
   background: #AF1E2C;
   color: #E6BE8A;
 }
-md-half-score .TB {
+md-half-score.TB {
   background: #D60A0B;
   color: #89765F;
 
 }
-md-half-score .LA {
+md-half-score.LA {
   background: #13264B;
   color: #C9AF74;
 }
-md-half-score .IND {
+md-half-score.IND {
   background: #003B7B;
   color:  white;
 }
-md-half-score .SD {
+md-half-score.SD {
   background: #0C2340;
   color: #0072CE;
 
 }
-md-half-score .KC {
+md-half-score.KC {
   background: #B20032;
   color: #F2C800;
 }
-md-half-score .NYJ {
+md-half-score.NYJ {
   background:  #0C371D;
   color: white;
 
 }
-md-half-score .PHI {
+md-half-score.PHI {
   background: #003B48;
   color: #D3A205;
 }
-md-half-score .PIT {
+md-half-score.PIT {
   background: black;
   color: #FFB612;
 
 }
-md-half-score .DAL {
+md-half-score.DAL {
   background:  #0D254C;
   color: #C5CED6;
 }
-md-half-score .CHI {
+md-half-score.CHI {
   background:  #03202F;
   color: #DD4814;
 }
-md-half-score .NO {
+md-half-score.NO {
   background: #D2B887;
   color: black;
 
 }
-md-half-score .ATL {
+md-half-score.ATL {
   background: #BD0D18;
   color: black;
 }

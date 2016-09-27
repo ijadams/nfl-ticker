@@ -1,23 +1,21 @@
-<div layout="full" class="scores-full" ng-cloak>
-  <div class="container" ng-repeat="score in home.scores">
+<div layout="full" class="scores-full" ng-cloak ng-repeat="score in home.scores">
 
-    <md-scores-half ng-class="score.home" class="home">
-      <md-scores-half-score><h2>{{score.homeScore}}</h2></md-scores-half-score>
-      <md-scores-half-name><h2>{{score.home}}</h2></md-scores-half-name>
-      <md-scores-half-home><p>HOME</p></md-scores-half-home>
-    </md-scores-half>
+    <md-half-score ng-class="score.home" class="home">
+      <md-half-score-score><h2>{{score.homeScore}}</h2></md-half-score-score>
+      <md-half-score-name><h2>{{score.home}}</h2></md-half-score-name>
+      <md-half-score-home><p>HOME</p></md-half-score-home>
+    </md-half-score>
 
-    <md-scores-half ng-class="score.away" class="away">
-      <md-scores-half-score><h2>{{score.homeAway}}</h2></md-scores-half-score>
-      <md-scores-half-name><h2>{{score.away}}</h2></md-scores-half-name>
-      <md-scores-half-away><p>AWAY</p></md-scores-half-away>
-    </md-scores-half>
+    <md-half-score ng-class="score.away" class="away">
+      <md-half-score-score><h2>{{score.awayScore}}</h2></md-half-score-score>
+      <md-half-score-name><h2>{{score.away}}</h2></md-half-score-name>
+      <md-half-score-away><p>AWAY</p></md-half-score-away>
+    </md-half-score>
 
     <md-scores-footer>
         <p>{{tile.gameTime | date:'mediumDate' }}</p>
     </md-scores-footer>
 
-  </div>
 </div>
 
 <md-fab-speed-dial md-open="demo.isOpen" md-direction="up" class="md-scale md-hover-full" ng-mouseenter="demo.isOpen=true" ng-mouseleave="demo.isOpen=false">
