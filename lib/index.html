@@ -7,6 +7,8 @@
         <title>NFL Ticker</title>
         <link href="styles.css" charset="utf-8">
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/x2js/1.2.0/xml2json.min.js" integrity="sha256-RbFvov4fXA9DW/RzOAcIC0ZHIDmghGdsoug5slJHMMI=" crossorigin="anonymous"></script>
+
         <style>
           [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
             display: none !important;
@@ -16,9 +18,9 @@
 
 
     <body ng-strict-di ng-app="demo" ng-controller="MainController as main">
-        <!-- md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
+        <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
             <div ui-view="sidenav"></div>
-        </md-sidenav> -->
+        </md-sidenav>
         <md-content flex layout-fill layout="column">
             <h2 class="week" ng-cloak flex>
                 <span class="ng-cloak">Week {{scores.ss.gms._w}} &middot;  <span style="font-weight:400;">NFL </span></span>
@@ -30,6 +32,5 @@
         {% } %}
     </body>
     <!-- {%= o.htmlWebpackPlugin.options.pkg.name + ' v' + o.htmlWebpackPlugin.options.pkg.version + ' built on ' + new Date() %} -->
- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/x2js/1.2.0/xml2json.min.js" integrity="sha256-RbFvov4fXA9DW/RzOAcIC0ZHIDmghGdsoug5slJHMMI=" crossorigin="anonymous"></script>
 
 </html>

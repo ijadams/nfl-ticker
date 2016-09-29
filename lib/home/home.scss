@@ -33,6 +33,14 @@ h2.week.flex {
   font-weight: 100;
   z-index: 1;
   letter-spacing: 2.25px;
+  @media screen and (max-width: 768px) {
+    padding: 10px;
+    margin: 0;
+    font-size: 20px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+  }
 }
 
 md-scores-footer {
@@ -177,8 +185,8 @@ md-half-score.IND {
   color:  white;
 }
 md-half-score.SD {
-  background: #0C2340;
-  color: #0072CE;
+  background: #0072CE;
+  color: #FFB81C;
 
 }
 md-half-score.KC {
@@ -192,7 +200,7 @@ md-half-score.NYJ {
 }
 md-half-score.PHI {
   background: #003B48;
-  color: #D3A205;
+  color: white;
 }
 md-half-score.PIT {
   background: black;
